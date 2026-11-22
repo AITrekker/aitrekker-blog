@@ -1,0 +1,36 @@
+title: AITrekker
+tagline: ""
+description: >-
+  AITrekker's blog. Coming soon.
+author: AITrekker
+lang: en
+
+# While true, the layout adds noindex and the home page shows a coming-soon note.
+# Set to false with the first real post.
+placeholder: true
+
+url: "https://aitrekker.us"
+baseurl: ""
+
+permalink: /:year/:month/:day/:title/
+excerpt_separator: "<!--more-->"
+timezone: America/Los_Angeles
+
+paginate: 10
+paginate_path: "/page:num/"
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-paginate
+
+defaults:
+  - scope: { path: "", type: "posts" }
+    values: { layout: "post" }
+
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor
